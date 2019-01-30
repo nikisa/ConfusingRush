@@ -38,9 +38,18 @@ public class Enemy : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        Vector2 moveInput = new Vector2(Input.GetAxisRaw("EnemyHorizontal"), 0);
+
+        Vector2 moveInput = new Vector2(0,0);
+
+        if ((TurnManager.turn % 2) == 0) {
+            moveInput = new Vector2(Input.GetAxisRaw("EnemyHorizontal"), 0);
+        }
+        else {
+            moveInput = new Vector2(Input.GetAxisRaw("EnemyHorizontal2"), 0);           
+        }
+
         moveAmount = moveInput.normalized * speed;
-        
+
         if (Input.GetMouseButton(0)) { //0 = Left Mouse Button -- 1 = Right Mouse Button
             if (Time.time >= shotTime) {
                 //cameraAnim.SetTrigger("shake");
