@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerCoop : MonoBehaviour {
 
@@ -19,6 +20,7 @@ public class PlayerCoop : MonoBehaviour {
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    public static float time = 0;
 
     private int P1W;
 
@@ -75,13 +77,12 @@ public class PlayerCoop : MonoBehaviour {
         if (health <= 0) {//DEAD
 
             P1W++;
-            ScoreP1.text = P1W.ToString();
             Debug.Log(TurnManager.turn);
             Projectile.speed = 40;
             Shock.speed = 40;
-            Heal(3);
-            
-            
+            SceneManager.LoadScene(3);
+            time = TimerCoop.t;
+
         }
 
     }

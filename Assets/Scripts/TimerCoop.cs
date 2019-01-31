@@ -4,11 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Timer : MonoBehaviour {
+public class TimerCoop : MonoBehaviour {
 
     public Text timerText;
-
-    public static int end = 1;
 
     public static float t;
 
@@ -34,10 +32,7 @@ public class Timer : MonoBehaviour {
          seconds = (t % 60).ToString("f2");
 
         timerText.text = minutes + ":" + seconds;
-
-        if ((t % 60) >= end+9) {
-            SceneManager.LoadScene(4);
-        }
+        
 
     }
 

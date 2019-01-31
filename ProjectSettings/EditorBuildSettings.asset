@@ -4,4 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 0faec403e406cab41aa6184d8b55adbd
+  - enabled: 1
+    path: Assets/Scenes/ConfusingRushCOOP.unity
+    guid: 43c1a290993b61e4ea44622b5a6363c3
+  - enabled: 1
+    path: Assets/Scenes/ConfusingRush.unity
+    guid: ec27288d81819e0438dfb0b1df75cf36
+  - enabled: 1
+    path: Assets/Scenes/GameOverCoop.unity
+    guid: 42b7b65cbd0bf674ca2c900e1c583f5b
+  - enabled: 1
+    path: Assets/Scenes/GameOverPVP.unity
+    guid: 2cf424bcb0137364bb9994f45da654a6
+  m_configObjects: {}

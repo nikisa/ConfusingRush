@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
 
     public float speed;
+
+    public static bool P1Winning = false;
  
 
     private Rigidbody2D rb;
@@ -86,8 +89,7 @@ public class Player : MonoBehaviour {
     public void TakeDamage(int damageAmount) {
         health -= damageAmount;
         UpdateHealthUI(health);
-        //hurtAnim.SetTrigger("hurt");
-
+        
 
         if (health <= 0) {//DEAD
             TurnManager.turn++;            
@@ -95,9 +97,9 @@ public class Player : MonoBehaviour {
             Debug.Log(TurnManager.turn);
             Projectile.speed = 40;
             Shock.speed = 40;
-            //Timer.timerText.text="0"; 
+            
 
-            if((TurnManager.turn % 2) == 0) {
+            if ((TurnManager.turn % 2) == 0) {
                 P1W++;
                 ScoreP1.text= P1W.ToString();
 
@@ -105,6 +107,14 @@ public class Player : MonoBehaviour {
             else {
                 P2W++;
                 ScoreP2.text = P2W.ToString();
+            }
+
+            if (P1W == P2W) {
+                Timer.end += 10;
+            }
+
+            if(P1W >= P2W) {
+                P1Winning = true;
             }
 
         }
