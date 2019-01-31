@@ -259,10 +259,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 217189798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 483c4e136bfe1e340a32aaa984007033, type: 3}
+  m_Script: {fileID: 11500000, guid: b2715173a6c2a4e42b07d0d846b3a648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   time: {fileID: 1478394264}
+  winner: {fileID: 0}
 --- !u!1 &236602801
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,7 +484,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2084454674}
+      - m_Target: {fileID: 217189802}
         m_MethodName: changeToScene
         m_Mode: 3
         m_Arguments:
@@ -869,7 +870,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2084454674}
+      - m_Target: {fileID: 217189802}
         m_MethodName: changeToScene
         m_Mode: 3
         m_Arguments:
@@ -1028,6 +1029,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2084454672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1844f503fb58bf44e8a721049962fe8f, type: 3}
+  m_Script: {fileID: 11500000, guid: b2715173a6c2a4e42b07d0d846b3a648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: {fileID: 1478394264}
+  winner: {fileID: 0}

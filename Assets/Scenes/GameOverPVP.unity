@@ -212,9 +212,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 60379148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1844f503fb58bf44e8a721049962fe8f, type: 3}
+  m_Script: {fileID: 11500000, guid: b2715173a6c2a4e42b07d0d846b3a648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: {fileID: 0}
+  winner: {fileID: 854753471}
 --- !u!4 &60379150
 Transform:
   m_ObjectHideFlags: 0
@@ -299,9 +301,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 71247248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdb54bba68c13614889b2526ef3c1e26, type: 3}
+  m_Script: {fileID: 11500000, guid: b2715173a6c2a4e42b07d0d846b3a648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: {fileID: 0}
   winner: {fileID: 854753471}
 --- !u!1 &288046556
 GameObject:
@@ -814,7 +817,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'player
+
+'
 --- !u!222 &854753472
 CanvasRenderer:
   m_ObjectHideFlags: 0
