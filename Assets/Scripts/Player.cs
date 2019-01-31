@@ -110,7 +110,7 @@ public class Player : MonoBehaviour {
             }
 
             if (P1W == P2W) {
-                Timer.end += 10;
+                Timer.end += 1;
             }
 
             if(P1W >= P2W) {

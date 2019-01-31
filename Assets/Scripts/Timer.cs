@@ -35,7 +35,7 @@ public class Timer : MonoBehaviour {
 
         timerText.text = minutes + ":" + seconds;
 
-        if ((t % 60) >= end+9) {
+        if ((t / 60) >= end) {
             SceneManager.LoadScene(4);
         }
 
