@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 95404998762907548}
   - component: {fileID: 61823073420216450}
   - component: {fileID: 50299635123005352}
-  - component: {fileID: 114064892336995912}
+  - component: {fileID: 114366941329527532}
   m_Layer: 9
-  m_Name: Enemy
+  m_Name: EnemyCOOP
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1571665554681946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.467, y: 44.8, z: 0.07630432}
+  m_LocalPosition: {x: -1.6, y: 26.050098, z: 0.07630432}
   m_LocalScale: {x: 1.0599041, y: 0.85909164, z: 0.8590916}
   m_Children:
   - {fileID: 4941769928365414}
@@ -164,7 +164,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114064892336995912
+--- !u!114 &114366941329527532
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -172,14 +172,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1571665554681946}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e116f3b1a97d1c4eae162820405f179, type: 3}
+  m_Script: {fileID: 11500000, guid: 303c824e545d9184dbf2ad544c1ecb7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  stopDistance: 0
   shotPoint: {fileID: 4941769928365414}
-  projectile: {fileID: 1299307784056868, guid: e02bb67bd07af9442a3d064bee8ca518, type: 2}
-  shock: {fileID: 1177012040414584, guid: 33273187cb049334897871238d2645d3, type: 2}
-  timeBetweenShots: 1.5
+  enemyBullet: {fileID: 1299307784056868, guid: e02bb67bd07af9442a3d064bee8ca518,
+    type: 2}
+  enemyShock: {fileID: 1177012040414584, guid: 33273187cb049334897871238d2645d3, type: 2}
+  player: {fileID: 4909844092947994, guid: 6f1d71f20f06fa74082dc29e5e093635, type: 2}
+  speed: 100
+  timeBetweenAttacks: 1.5
 --- !u!212 &212395571667394062
 SpriteRenderer:
   m_ObjectHideFlags: 1

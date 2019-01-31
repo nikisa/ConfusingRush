@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4588969712442060}
   - component: {fileID: 212213457655999732}
   - component: {fileID: 61445260055706996}
-  - component: {fileID: 114915169792207828}
+  - component: {fileID: 114917628576610774}
   m_Layer: 0
-  m_Name: EnemyShock
+  m_Name: EnemyShockCoop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.164319, y: 4.2448673}
   m_EdgeRadius: 0
---- !u!114 &114915169792207828
+--- !u!114 &114917628576610774
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1177012040414584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 245f6dfcf87c43946bdb7db86bf07ae6, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a32eca1d5ef82a40a6d6537a58629f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 1.2
